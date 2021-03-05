@@ -1,0 +1,772 @@
+/* ------------------- header ------------------- */
+
+
+body {
+
+    margin: 0;
+}
+
+header {
+
+    box-shadow: 0 5px 5px #cccccc;
+
+    padding: 9px 0;
+
+    position: relative;
+    z-index: 1;
+    /* 把底部的東西放在最上面 */
+}
+
+.container {
+    /* 設定容器 */
+
+    width: 1200px;
+    /* width: 100%; */
+    margin: auto;
+    /*置中*/
+
+}
+
+.navbar {
+    /* 導航欄設定 */
+
+    list-style-type: none;
+    /*標頭黑點去掉*/
+    font-size: 12px;
+
+    margin: 0;
+    padding: 0;
+}
+
+li.navItem {
+
+    display: inline;
+    /* 不顯示換行 */
+
+    border-right: 1px solid #777777;
+
+}
+
+li.navItem a {
+    /* 設定 a 內容 */
+
+    padding: 0 9px;
+    color: #555555;
+
+}
+
+li.navItem a:link {
+    /* 設定 a 超連結的內容 */
+
+    text-decoration: none;
+    /*沒有下滑鍵*/
+
+}
+
+li.navItem a:hover {
+    /* 設定滑鼠指向超連結的變化 */
+
+    text-decoration: underline;
+    color: #0654ba
+}
+
+#signin-style a:link {
+
+    color: #0654ba;
+    padding: 0;
+
+}
+
+#signin-style a:link:last-child {
+    * 對超連結最後一個元素做改變 */ padding-right: 16px;
+}
+
+.float-right {
+
+    float: right;
+
+}
+
+.no-border {
+
+    border-right: none !important;
+    /* 使用最優先度 */
+
+}
+
+#alert {
+
+    margin-top: -3px;
+
+    padding: 0 15px 0 25px;
+
+}
+
+#cart {
+
+    margin-top: -3px;
+
+    padding: 0 15px 0 25px;
+
+}
+
+/* ------------------- Search Form ------------------- */
+
+#search-bar {
+
+    width: 100%;
+    height: 65px;
+
+    overflow: hidden;
+
+}
+
+.setBGColor {
+
+    background-color: #F9F9F9;
+    /* background-color: yellow;  */
+}
+
+.clearfix {
+
+    clear: both;
+}
+
+#brand {
+
+    float: left;
+    padding-top: 5px;
+}
+
+#shopping-button {
+
+    float: left;
+
+    width: 70px;
+
+    font-size: 14px;
+    color: #555555;
+
+    border: none;
+    background-color: #f9f9f9;
+
+    margin-right: 15px;
+
+}
+
+#arrow {
+
+    position: relative;
+
+    bottom: 35px;
+    left: 40px;
+
+}
+
+#search-form {
+
+    float: left;
+
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#search-field {
+    /* 定義搜索框大小 */
+
+    border-radius: 3px 0 0 3px;
+    width: 630px;
+    height: 40px;
+
+    box-sizing: border-box;
+    /* 設立規則，使之後變化都符合630/40的原則。 */
+    /* 設置大小限於搜索框內  */
+
+}
+
+.text-field {
+    /* 調整選項位置 */
+
+    font-size: 14px;
+    color: #767676;
+    padding: 10px 0 9px 8px;
+
+    border: 1px solid #ddd;
+}
+
+#category-textfield {
+    /* 調整選項框架 */
+
+    border-radius: 0 3px 3px 0;
+    padding: 11px 10px;
+    width: 180px;
+    height: 40px;
+    /* 以某物件為核心，向外擴張大小(順時針方向)，若上下/左右為同質，後面的可省略。 */
+    background-color: #fff;
+
+    box-sizing: border-box;
+
+    margin-left: -5px;
+}
+
+.options {
+    /* 調整選項位置 */
+
+    border: none;
+    font-size: 12px;
+    width: 100%;
+
+    background-color: transparent;
+    /*透明*/
+
+}
+
+.btn-primary {
+    /* 搜索按鈕 */
+
+    font-size: 16px;
+    height: 40px;
+
+    font-weight: 500;
+    border-radius: 3px;
+    border: 0;
+
+    color: #fff;
+    padding: 8px 19px 9px 19px;
+    background: linear-gradient(to bottom, #0079bc, #00509d);
+    /* 漸變色由上到下 */
+
+}
+
+.btn-primary:hover {
+    /* 滑鼠指向變色 */
+
+    background: #00509d;
+
+}
+
+#advanced-button {
+
+    color: #555555;
+    text-decoration: none;
+    /* 消除超連結底線 */
+
+    font-size: 11px;
+    margin-left: 10px;
+
+}
+
+#advanced-button:hover {
+
+    color: #065dBA;
+}
+
+/* ------------------- Navigation Bar ------------------- */
+
+nav {
+    /*區塊大小設定 */
+
+    width: 100%;
+    height: 35px;
+
+    padding-top: 12px;
+
+
+}
+
+.tb-border {
+    /* 導航欄上下橫線 */
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+}
+
+#navigation-bar {
+
+    width: 100%;
+    height: 35px;
+
+    padding: 10px 0 11px 0;
+    /* 以此專案來說，下底預留了hover經過的效果空間 */
+    box-sizing: border-box;
+    /* 用意是使它遵守我們設定的框架原則， */
+    /* 即便使用margin/padding等都不會影響中心框架 */
+}
+
+.li-sapce {
+    /* 各項間隔 */
+
+    float: left;
+    padding: 0 2%;
+
+}
+
+.divider {
+    /* 分隔線 */
+
+    float: left;
+    width: 1px;
+    height: 24px;
+
+    background: #ddd;
+
+    margin: -5px 20px 0 20px;
+}
+
+.active a {
+    /* Today 字體優化 */
+
+    font-weight: bold;
+    border-bottom: 2px solid #555;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    padding-bottom: 5px !important;
+}
+
+.active a:hover {
+    /* 滑鼠移動後樣式改為不變 */
+
+    text-decoration: none !important;
+    color: #555 !important;
+
+
+}
+
+/* ------------------- Advertisement ------------------- */
+#adsec {
+
+    height: 384px;
+    padding: 32px 0;
+}
+
+#column1 {
+
+    float: left;
+    height: 384px;
+
+}
+
+#column2 {
+    /* 圖片的容器調整 相對位置 */
+
+
+    position: relative;
+
+    float: left;
+
+    width: 324px;
+    height: 384.38px;
+
+}
+
+#ad2 {
+    /* 圖片位置調整 容器內絕對位置 */
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+}
+
+#ad3 {
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+.add-border {
+
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+
+}
+
+/* ------------------- Product Section ------------------- */
+#productsec {
+    /* 商品區塊設置 */
+
+    width: 100%;
+    height: 647px;
+
+    padding-bottom: 75px;
+
+    overflow: hidden;
+
+}
+
+.hero-heading {
+    /* 文字設置 */
+
+    height: 45px;
+    border-bottom: 1px solid #ddd;
+
+    font-weight: 400;
+    color: #555;
+
+}
+
+#show-product {
+    /* 包括整行圖片和文章的部分 */
+
+    position: relative;
+
+    width: 100%;
+    height: 602.5px;
+}
+
+.product-section {
+    /*其中一個產品和文章的部分 */
+
+    float: left;
+
+    width: 585px;
+    height: 602.5px;
+}
+
+.product-photo {
+    /* 圖片部分 */
+
+    width: 585px;
+    height: 420px;
+
+}
+
+.photo-column1 {
+
+    float: left;
+
+    width: 445px;
+    height: 420px;
+
+    border-width: 1px 0 1px 1px;
+    border-color: #ddd;
+    border-style: solid;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+#photo1 {
+
+    height: 418px;
+
+    position: relative;
+    left: -100px;
+    /* 照片平移，使用相對位置跟水平移動 */
+
+    overflow: hidden;
+
+}
+
+.photo-column2 {
+
+    float: left;
+
+    width: 140px;
+    height: 420px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.thumb {
+
+    width: 140px;
+    height: 140px;
+
+    border-width: 1px 1px 0 1px;
+    border-color: #ddd;
+    border-style: solid;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.thumb:last-child {
+
+    border-width: 1px 1px 1px 1px;
+
+}
+
+.thumbnail {
+
+    height: 140px;
+}
+
+#thumbnail-fix {
+
+    position: relative;
+
+    right: 20px;
+}
+
+/* ------------------- Article ------------------- */
+
+article {
+
+    color: #333333;
+}
+
+.title {
+
+    font-weight: 400;
+    font-size: 26px;
+
+    margin: 18px 0 10px 0;
+}
+
+.description-container {
+
+    width: 370px;
+    height: 118px;
+}
+
+#product-details {
+
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 1.5em;
+    /* 行列高度 */
+}
+
+.readmore {
+
+    display: inline-block;
+    /* 貼緊文字尾端 */
+    /* 因為span的關係，所以需要更改為區塊 */
+
+    width: 28px;
+    height: 28px;
+    background-image: url("img/images.png");
+
+    background-size: cover;
+    /* 調整圖片大小 自動縮放 適應容器大小*/
+    vertical-align: middle;
+    /* 橫向對齊 */
+
+}
+
+.left-col {
+
+    float: left;
+    width: 440px;
+}
+
+.right-col {
+
+    float: right;
+    width: 140px;
+}
+
+.right-col-text {
+
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right-col-container {
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.right-col-item {
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #ddd;
+
+
+}
+
+.right-col-item:last-child {
+
+    border: none;
+
+}
+
+.right-col-item a {
+
+    text-decoration: none;
+    color: #0654ba;
+
+}
+
+.right-col-item a:hover {
+
+    text-decoration: underline;
+    color: #0654ba;
+
+}
+
+/* --------------------- product2 ------------------ */
+
+.right-section {
+
+    position: absolute;
+
+    right: 0;
+
+}
+
+/* ----------------------- Daily Deals -----------------  */
+
+#daily-deals {
+
+    width: 100%;
+    height: 530px;
+
+    padding-bottom: 75px;
+    border-bottom: 1px solid #ddd;
+
+    overflow: hidden;
+}
+
+.box {
+
+    width: 100%;
+    height: 300px;
+
+    padding: 25px 0 0 8px;
+    vertical-align: middle;
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 2px;
+
+    margin-bottom: 80px;
+}
+
+.box-subcontent {
+
+    float: left;
+
+    width: 190px;
+    margin: 0 24px;
+}
+
+.sale {
+
+    width: 169px;
+    border: 1px solid #ddd;
+}
+
+.details {
+
+    width: 180px;
+    display: inline-block;
+
+    font-size: 14px;
+    padding: 8px 0 0 8px;
+
+    color: black;
+
+    text-decoration: none;
+
+}
+
+.details:hover {
+
+    text-decoration: underline;
+    color: #0654ba;
+
+}
+
+.price {
+
+    padding: 8px 0 0 8px;
+
+    margin: 0;
+}
+
+/* ------------------ Pagination ---------------- */
+.pagination {
+
+    text-align: center;
+}
+
+.pagination-content {
+
+    padding: 20px;
+    display: inline-block;
+
+}
+
+.pagination-content a {
+
+    color: black;
+    float: left;
+    padding: 8px 8px;
+
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination-content a:hover:not(.active) {
+
+    /* 製作背景動畫 */
+    background-color: #ddd;
+
+}
+
+.pagination-content a.active {
+
+    /* 設定第P.3為當前默認狀態 */
+    background-color: #4CAF50;
+    color: white
+}
+
+/* ----------------------- Collections --------------------- */
+
+#collections {
+
+    border: 1px solid #ddd;
+    background-color: white;
+
+    border-radius: 2px;
+    text-align: center;
+
+    color: #777777;
+
+    box-sizing: border-box;
+}
+
+#collections a {
+
+    color: #0654ba;
+    text-decoration: none;
+
+}
+
+#collections a:hover {
+
+    color: #0654ba;
+    text-decoration: underline;
+
+}
+
+/* ------------------- footer ----------------- */
+
+footer {
+
+    color: #777777;
+}
