@@ -78,7 +78,8 @@ li.navItem a:hover {
 }
 
 #signin-style a:link:last-child {
-    * 對超連結最後一個元素做改變 */ padding-right: 16px;
+    /* 對超連結最後一個元素做改變  */
+    padding-right: 16px;
 }
 
 .float-right {
